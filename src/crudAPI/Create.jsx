@@ -14,7 +14,7 @@ const Create = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .get(`http://localhost:3001/students/${values.id}`)
+      .get(`https://project-data-e42e.onrender.com/students/${values.id}`)
       .then((res) => {
         // If ID exists, show error
         setError("ID already exists");
@@ -22,9 +22,9 @@ const Create = () => {
       .catch(() => {
         // If ID doesn't exist, submit the form
         axios
-          .post("http://localhost:3001/students", values)
+          .post("https://project-data-e42e.onrender.com/students", values)
           .then(() => {
-            navigate("/crudhome");
+            navigate("/");
           })
           .catch((err) => console.log(err));
       });
