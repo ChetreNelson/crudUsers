@@ -25,7 +25,7 @@ const Update = () => {
       .put("http://localhost:3001/students/" + id, dataOfId)
       .then((res) => {
         console.log(res);
-        navigate("/crudhome");
+        navigate("/");
       })
       .catch((err) => console.log(err));
   };
@@ -86,7 +86,7 @@ const Update = () => {
             />
           </div>
           <button
-            to={"/crudhome"}
+            to={"/"}
             type="submit"
             className="border border-green-500 bg-green-500 text-white
         rounded-lg px-2 py-2 mr-2"
@@ -94,7 +94,7 @@ const Update = () => {
             Submit
           </button>
           <Link
-            to={"/crudhome"}
+            to={"/"}
             className="border border-black bg-black text-white
         rounded-lg px-2 py-2"
           >
