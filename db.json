@@ -1,0 +1,26 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Nelson Katwal",
+      "username": "Nelson",
+      "email": "Katwalnelson8@gmail.com",
+      "phone": "9876543210",
+      "website": "Nelosn.org"
+    },
+    {
+      "id": "3",
+      "name": "Hima  B",
+      "username": "Hima",
+      "email": "baniyahima@gmail.com",
+      "phone": "981234567",
+      "website": "Hima.org"
+    },
+    {
+      "id": "4",
+      "name": "Shiv  Narayan",
+      "email": "kumarshiv@gmail.com",
+      "phone": "88988833"
+    }
+  ]
+}
