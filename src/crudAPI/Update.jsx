@@ -86,7 +86,7 @@ const Update = () => {
             />
           </div>
           <button
-            to={"/"}
+            to={"/crudhome"}
             type="submit"
             className="border border-green-500 bg-green-500 text-white
         rounded-lg px-2 py-2 mr-2"
@@ -94,7 +94,7 @@ const Update = () => {
             Submit
           </button>
           <Link
-            to={"/"}
+            to={"/crudhome"}
             className="border border-black bg-black text-white
         rounded-lg px-2 py-2"
           >
