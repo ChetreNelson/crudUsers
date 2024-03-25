@@ -31,7 +31,7 @@ const Create = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center w-full h-screen bg-slate-300">
+    <div className="flex flex-col justify-center items-center w-full h-screen font-abc bg-slate-300">
       <div className="w-1/2  rounded-xl bg-white shadow-lg p-2">
         <h1 className="text-2xl font-bold text-center">FillUp Form</h1>
         <form onSubmit={handleSubmit} className="m-4 p-2">
@@ -61,7 +61,8 @@ const Create = () => {
               type="text"
               name="name"
               placeholder="Enter Name"
-              className="border border-gray-300 rounded-md px-3 py-2 w-full focus:outline-none focus:border-blue-500"
+              className="border border-gray-300 rounded-md 
+              px-3 py-2 w-full focus:outline-none focus:border-blue-500"
             />
           </div>
           <div className="mb-4">

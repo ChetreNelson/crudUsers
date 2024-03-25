@@ -13,7 +13,7 @@ const Update = () => {
 
   const getApiDataFromId = async () => {
     try {
-      const value = await axios.get("http://localhost:3001/students/" + id);
+      const value = await axios.get("https://project-data-e42e.onrender.com/students/" + id);
       setDataOfId(value.data);
     } catch (error) {
       console.log(error);
@@ -22,7 +22,7 @@ const Update = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .put("http://localhost:3001/students/" + id, dataOfId)
+      .put("https://project-data-e42e.onrender.com/students/" + id, dataOfId)
       .then((res) => {
         console.log(res);
         navigate("/");
@@ -35,7 +35,7 @@ const Update = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center w-full h-screen bg-slate-300">
+    <div className="flex flex-col justify-center items-center w-full font-abc h-screen bg-slate-300">
       <div className="w-1/2  rounded-xl bg-white shadow-lg p-2">
         <h1 className="text-2xl font-bold text-center">Update Form</h1>
         <form onSubmit={handleSubmit} className="m-4 p-2">
@@ -88,15 +88,17 @@ const Update = () => {
           <button
             to={"/"}
             type="submit"
-            className="border border-green-500 bg-green-500 text-white
-        rounded-lg px-2 py-2 mr-2"
+            className=" bg-green-500 text-white
+        rounded-lg px-2 py-2 mr-2 
+        transition duration-300 ease-in-out hover:bg-slate-800 focus:bg-red-500"
           >
             Submit
           </button>
           <Link
             to={"/"}
-            className="border border-black bg-black text-white
-        rounded-lg px-2 py-2"
+            className="bg-gray-600 text-white rounded-lg
+            transition duration-300 ease-in-out hover:bg-slate-800 focus:bg-red-500
+            px-2 py-2"
           >
             Back
           </Link>
